@@ -1,0 +1,144 @@
+<ui version="4.0">
+ <class>example3DialogBase</class>
+ <widget class="QDialog" name="example3DialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>example3</string>
+  </property>
+
+  <!-- Directory Line Edit -->
+  <widget class="QLineEdit" name="directoryLineEdit_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>260</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter directory path</string>
+   </property>
+  </widget>
+
+  <!-- Browse Button -->
+  <widget class="QPushButton" name="browseButton_1">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+  <!-- Directory Line Edit -->
+  <widget class="QLineEdit" name="directoryLineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>260</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter directory path</string>
+   </property>
+  </widget>
+
+  <!-- Browse Button -->
+  <widget class="QPushButton" name="browseButton_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+
+  <!-- Submit Button -->
+  <widget class="QPushButton" name="submitButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>60</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+
+  <!-- Button Box (for Cancel and Ok) -->
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>example3DialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="source_label">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destination_label">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>example3DialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="source_label">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destination_label">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
